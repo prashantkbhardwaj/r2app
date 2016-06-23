@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+
+            />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.r2robotronics.myapplication.MapsActivity"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A237E"
+            android:text="SEND LOCATION"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:id="@+id/textView1"
+                android:background="#FFFFFF"
+                android:singleLine="false"
+                android:textColor="#000000"
+                android:typeface="normal"
+                android:gravity="center"
+                android:layout_below="@+id/tool_bar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

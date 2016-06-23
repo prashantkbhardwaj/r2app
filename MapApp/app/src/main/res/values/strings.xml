@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">R2</string>
+    <string name="title_activity_maps">MapR2</string>
+    <string name="action_settings">Material Toolsbar</string>
+    <string name="gps_network_not_enabled">GPS DISABLED!</string>
+    <string name="open_location_settings">OPEN LOCATION SETTINGS</string>
+    <string name="Cancel">CANCEL</string>
+</resources>
